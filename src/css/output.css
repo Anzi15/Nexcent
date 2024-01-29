@@ -544,8 +544,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-6 {
-  margin: 1.5rem;
+.m-\[3rem\] {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mt-4 {
@@ -556,32 +564,108 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mt-\[3rem\] {
+  margin-top: 3rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
+}
+
+.max-h-96 {
+  max-height: 24rem;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.min-h-\[75vh\] {
+  min-height: 75vh;
 }
 
 .w-full {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[7rem\] {
+  width: 7rem;
+}
+
+.w-\[8rem\] {
+  width: 8rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[1rem\] {
+  width: 1rem;
+}
+
+.w-\[15rem\] {
+  width: 15rem;
+}
+
+.min-w-\[8rem\] {
+  min-width: 8rem;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[5rem\] {
+  max-width: 5rem;
+}
+
+.max-w-\[8rem\] {
+  max-width: 8rem;
+}
+
+.max-w-\[9rem\] {
+  max-width: 9rem;
+}
+
+.max-w-\[7rem\] {
+  max-width: 7rem;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
-.items-center {
-  align-items: center;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.items-baseline {
-  align-items: baseline;
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -600,6 +684,10 @@ video {
   gap: 2.25rem;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -607,6 +695,15 @@ video {
 .bg-brand_primary {
   --tw-bg-opacity: 1;
   background-color: rgb(76 175 79 / var(--tw-bg-opacity));
+}
+
+.bg-silver {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 247 250 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-7 {
@@ -629,12 +726,31 @@ video {
   padding-top: 0.5rem;
 }
 
-.align-middle {
-  vertical-align: middle;
+.text-center {
+  text-align: center;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-normal {
   font-weight: 400;
+}
+
+.text-brand_primary {
+  --tw-text-opacity: 1;
+  color: rgb(76 175 79 / var(--tw-text-opacity));
+}
+
+.text-d_grey {
+  --tw-text-opacity: 1;
+  color: rgb(77 77 77 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -654,6 +770,14 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 
