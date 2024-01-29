@@ -9,6 +9,7 @@
 
     <!-- js -->
     <script defer src="src/js/index.js"></script>
+    <script defer src="src/js/observer.js"></script>
 </head>
 <body class="max-w-screen overflow-x-hidden min-h-[100vh]">
     <!-- header -->
@@ -68,16 +69,18 @@
     <!-- hero section -->
     <section class="hero bg-silver w-screen p-4 flex justify-center flex-wrap items-center min-h-[75vh]">
         <!-- text content -->
-        <div class="txt-content md:w-2/3 w-full grid items-center">
+        <div class="txt-content md:w-2/3 w-full grid items-center" data-observerable_elem>
             <h1 class="text-6xl font-bold text-d_grey text-center md:text-left">Lessons and insights <br> <span class="text-brand_primary"> from 8 years</span></h1>
 
-            <p class="mt-4 mb-4">Where to grow your business as a photographer: site or social media?</p>
+            <p class="mt-6 mb-6 text-center md:text-left">Where to grow your business as a photographer: site or social media?</p>
 
-            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text w-[8rem] flex justify-center" href="">Register</a>
+            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text w-[100%] flex justify-center self-end md:w-[8rem] mb-12" href="">Register</a>
+
+
         </div>
 
         <!-- illustration -->
-        <img src="src/assets/illustrations/Illustrationhero-page-person-standing.png" alt="" class="max-h-96">
+        <img data-observerable_elem src="src/assets/illustrations/Illustrationhero-page-person-standing.png" alt="" class="max-h-96">
     </section>
 </body>
 </html>

@@ -1,4 +1,4 @@
-"use-strict";
+"use strict";
 
 //selecting elements
 const nav_toggle_btn = document.getElementById('nav-toggle-btn');
