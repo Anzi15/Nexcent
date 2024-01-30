@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/output.css">
+
+    <!-- js -->
+    <script defer src="src/js/index.js"></script>
+    <script defer src="src/js/observer.js"></script>
+</head>
+<body class="max-w-screen overflow-x-hidden min-h-[100vh]">
+    <!-- header -->
+    <header class="bg-silver">
+        <!-- seprate navbar for mobiles -->
+        <div id="mob-nav" class="mobile-only-nav w-full mt-6 mb-6 md:hidden hidden bg-silver">
+            <div class="nav-links  md:flex items-center ">
+                <ul class="w-full flex gap-9 font-normal flex-col items-center">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Feature</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="nav-cta flex gap-4 w-full justify-center mt-4">
+                <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text  md:block " href="">Contact us</a>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="flex lg:w-full justify-between p-7">
+            <!-- logo for branding -->
+            <div class="logo flex items-center">
+                <a href="">
+                    <img src="src/assets/nexcent-logo.png" alt="nexcent-logo">
+                </a>
+            </div>
+
+            <!-- links for navigation -->
+            <div class="nav-links hidden  md:flex items-center ">
+                <ul class=" flex gap-9 font-normal ">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Feature</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- call to action button -->
+            <div class="nav-cta flex gap-4 ">
+                <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="">Contact us</a>
+            </div>
+
+            
+            <div class="reponsive-hamburger-toggler md:hidden ">
+                <button id="nav-toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero bg-silver w-screen p-4 flex justify-center flex-wrap items-center min-h-[75vh]">
+        <!-- text content -->
+        <div class="transition-all duration-[1.5s] opacity-0 txt-content md:w-2/3 w-full grid items-center" data-observerable_elem>
+            <h1 class="text-6xl font-bold text-d_grey text-center md:text-left">Lessons and insights <br> <span class="text-brand_primary"> from 8 years</span></h1>
+
+            <p class="mt-6 mb-6 text-center md:text-left">Where to grow your business as a photographer: site or social media?</p>
+
+            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text w-[100%] flex justify-center self-end md:w-[8rem] mb-12" href="">Register</a>
+
+
+        </div>
+
+        <!-- illustration -->
+        <img data-observerable_elem src="src/assets/illustrations/Illustrationhero-page-person-standing.png" alt="" class="transition-all opacity-0 max-h-96">
+    </section>
+</body>
+</html>
