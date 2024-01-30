@@ -568,6 +568,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -604,12 +616,20 @@ video {
   width: 100vw;
 }
 
-.min-w-8 {
-  min-width: 2rem;
-}
-
 .min-w-32 {
   min-width: 8rem;
+}
+
+.max-w-\[10rem\] {
+  max-width: 10rem;
+}
+
+.max-w-\[20rem\] {
+  max-width: 20rem;
+}
+
+.max-w-\[30rem\] {
+  max-width: 30rem;
 }
 
 .grow {
@@ -674,12 +694,12 @@ video {
   padding: 1rem;
 }
 
-.p-7 {
-  padding: 1.75rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .pb-2 {
@@ -748,10 +768,6 @@ video {
   transition-duration: 150ms;
 }
 
-.delay-150 {
-  transition-delay: 150ms;
-}
-
 .delay-100 {
   transition-delay: 100ms;
 }
@@ -768,12 +784,12 @@ video {
   transition-delay: 500ms;
 }
 
-.duration-\[1\.5s\] {
-  transition-duration: 1.5s;
-}
-
 .duration-1000 {
   transition-duration: 1000ms;
+}
+
+.duration-\[1\.5s\] {
+  transition-duration: 1.5s;
 }
 
 /* npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch */
