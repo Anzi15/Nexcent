@@ -548,8 +548,16 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-4 {
@@ -570,14 +578,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-\[200\] {
-  height: 200;
-}
-
-.h-\[200vh\] {
-  height: 200vh;
 }
 
 .max-h-96 {
@@ -604,6 +604,14 @@ video {
   width: 100vw;
 }
 
+.min-w-8 {
+  min-width: 2rem;
+}
+
+.min-w-32 {
+  min-width: 8rem;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -626,6 +634,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-4 {
@@ -666,6 +678,10 @@ video {
   padding: 1.75rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -686,6 +702,11 @@ video {
   text-align: center;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -697,6 +718,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-brand_primary {
@@ -723,20 +748,32 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
+.delay-150 {
+  transition-delay: 150ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
+.delay-100 {
+  transition-delay: 100ms;
 }
 
-.duration-\[2s\] {
-  transition-duration: 2s;
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
 }
 
 .duration-\[1\.5s\] {
   transition-duration: 1.5s;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 /* npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch */
