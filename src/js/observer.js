@@ -10,7 +10,7 @@ const createObserver = function(elemArr){
     let options = { //setting up options
       root: null,
       rootMargin: "0px",
-      threshold: 0.8,
+      threshold: 0.9,
     };
   
     observer = new IntersectionObserver(handleIntersect, options); //making a new IntersectionObserver

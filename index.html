@@ -86,8 +86,8 @@
     <!-- our clients section -->
     <section class="clients">
         <!-- heading and subheading -->
-        <h1 class="text-center text-3xl mt-4 font-semibold" data-observerable_elem>Our clients are from</h1>
-        <p class="text-center" data-observerable_elem>We have been working with some Fortune 500+ clients</p>
+        <h1 class="text-center text-3xl mt-4 font-semibold opacity-0 transition-all duration-[1.3s]" data-observerable_elem>Our clients are from</h1>
+        <p class="text-center opacity-0 transition-all duration-[1.3s]" data-observerable_elem>We have been working with some Fortune 500+ clients</p>
 
         <!-- clients logo -->
         <div class="client-logos-con flex w-full justify-evenly mt-16 mb-16 flex-wrap">
@@ -109,9 +109,33 @@
     <!-- community section -->
     <section class="community grid justify-center mt-14" >
         <!-- heading and subheading -->
-        <h1 class="text-center text-3xl mt-4 font-semibold max-w-[30rem]">Manage your entire community in a single system</h1>
-        <p class="text-center mt-8 mb-8">Who is Nextcent suitable for?
+        <h1 class="text-center text-3xl mt-4 font-semibold opacity-0 transition-all duration-[1.3s]" data-observerable_elem>Manage your entire community <br> in a single system</h1>
+        <p class="text-center mt-8 mb-8 opacity-0 transition-all duration-[1.3s]" data-observerable_elem>Who is Nextcent suitable for?
         </p>
+
+        <!-- community cards container -->
+        <div class="flex w-screen justify-evenly flex-wrap gap-8">
+            <div class="opacity-0.transition-all duration-[1.3s] w-[20%] min-w-[20rem]  grid justify-center ml-8" data-observerable_elem="">
+                
+                <img class="m-6" src="src/assets/icons/community/Icon-1.png" alt="Community Icon 1">
+                <h1 class="text-2xl font-semibold mb-4 ">
+                    Membership Organisations
+                </h1>
+                <p>Our membership management software provides full automation of membership renewals and payments</p>
+            </div>
+            <div class="opacity-0.transition-all duration-[1.3s] w-[20%] min-w-[20rem]  grid justify-center ml-8" data-observerable_elem="">
+                
+                <img class="m-6" src="src/assets/icons/community/Icon-2.png" alt="Community Icon 2">
+                <h1 class="text-2xl font-semibold mb-4 ">National Associations</h1>
+                <p>Our membership management software provides full automation of membership renewals and payments</p>
+            </div>
+            <div class="opacity-0.transition-all duration-[1.3s] w-[20%] min-w-[20rem]  grid justify-center ml-8" data-observerable_elem="">
+                
+                <img class="m-6" src="src/assets/icons/community/Icon-3.png" alt="Community Icon 3">
+                <h1 class="text-2xl font-semibold mb-4 ">Clubs And Groups</h1>
+                <p>Our membership management software provides full automation of membership renewals and payments</p>
+            </div>
+        </div>
     </section>
 
 </body>
