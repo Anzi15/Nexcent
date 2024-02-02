@@ -25,12 +25,12 @@ const createObserver = function(elemArr){
 //manipulating thins accoding to intersection
 function handleIntersect(entries) {
     entries.forEach((entry) => {
+        // checking if it's for the text animation or animation on scroll
         if(entry.target.dataset.textcounter){
             if(entry.isIntersecting){
-                console.log('anomation startedx')
                 textcounter(entry.target)
             }
-        }
+        }else{
             if (entry.isIntersecting) { //when elem comes in viewport
                 entry.target.classList.remove("opacity-0");
                 entry.target.classList.add("opacity-100");
@@ -39,18 +39,22 @@ function handleIntersect(entries) {
                 entry.target.classList.add("opacity-0");
                 entry.target.classList.remove("opacity-100");
             }
+        }
     })
 }
 
 // text counting animation
 function textcounter(elem){
+    //getting the destination number of the element from it's data set
     const endNum = parseInt(elem.dataset.textcounter);
     let currentNum = 1;
     
+    // setting a interval function to change the number (causing an animation)
     const countAdd = setInterval(() => {
         currentNum++
         currentNum > endNum ? clearInterval(countAdd) :  elem.innerText = currentNum;
     }, 4);
 }
-createObserver(textCounterElems)
 createObserver(allObserverableElems)
+// adding counting animation elems
+createObserver(textCounterElems)
