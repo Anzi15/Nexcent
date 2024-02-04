@@ -999,6 +999,10 @@ video {
   gap: 3rem;
 }
 
+.hover\:gap-\[2\.5rem\]:hover {
+  gap: 2.5rem;
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
