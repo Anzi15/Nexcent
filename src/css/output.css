@@ -662,6 +662,18 @@ video {
   height: 2rem;
 }
 
+.h-\[3ovh\] {
+  height: 3ovh;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
+}
+
+.h-\[\] {
+  height: ;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -794,6 +806,14 @@ video {
   gap: 2.25rem;
 }
 
+.gap-\[3rem\] {
+  gap: 3rem;
+}
+
+.gap-\[2rem\] {
+  gap: 2rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -884,6 +904,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -956,7 +981,23 @@ video {
   transition-duration: 1s;
 }
 
+.duration-\[\.5s\] {
+  transition-duration: .5s;
+}
+
 /* npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch */
+
+.hover\:justify-between:hover {
+  justify-content: space-between;
+}
+
+.hover\:justify-evenly:hover {
+  justify-content: space-evenly;
+}
+
+.hover\:gap-\[3rem\]:hover {
+  gap: 3rem;
+}
 
 @media (min-width: 768px) {
   .md\:block {
