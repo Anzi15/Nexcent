@@ -2,7 +2,7 @@
 
 //selecting elems from dom
 const allObserverableElems = document.querySelectorAll('[data-observerable_elem]')
-const textCounterElems = document.querySelectorAll("[data-textcounter]")
+const counterAniElems = document.querySelectorAll("[data-textcounter]")
 
 //creating observer, options new IntersectionObserver and asiging each elem for observations
 const createObserver = function(elemArr){
@@ -55,6 +55,8 @@ function textcounter(elem){
         currentNum > endNum ? clearInterval(countAdd) :  elem.innerText = currentNum;
     }, 4);
 }
+
+//calling functions
 createObserver(allObserverableElems)
 // adding counting animation elems
-createObserver(textCounterElems)
+createObserver(counterAniElems)
