@@ -37,7 +37,7 @@
             <!-- logo for branding -->
             <div class="logo flex items-center">
                 <a href="">
-                    <img src="src/assets/nexcent-logo.png" alt="nexcent-logo">
+                    <img src="src/assets/nexcent-logo-black.png" alt="nexcent-logo">
                 </a>
             </div>
 
@@ -232,11 +232,11 @@
                 <img data-observerable_elem src="src/assets/brand logos/Logo-2.png" alt="" class="h-12 opacity-0 transition-all duration-[1.2s]">
 
                 <img data-observerable_elem src="src/assets/brand logos/Logo-3.png" alt="" class="h-12 opacity-0 transition-all duration-[1.2s]">
-                
+
                 <img data-observerable_elem src="src/assets/brand logos/Logo-4.png" alt="" class="h-12 opacity-0 transition-all duration-[1.2s]">
-                
+
                 <img data-observerable_elem src="src/assets/brand logos/Logo-5.png" alt="" class="h-12 opacity-0 transition-all duration-[1.2s]">
-                
+
                 <img data-observerable_elem src="src/assets/brand logos/Logo-6.png" alt="" class="h-12 opacity-0 transition-all duration-[1.2s]">
 
                 <p data-observerable_elem class="text-brand_primary opacity-0 transition-all duration-[1.2s]">And more...</p>
@@ -264,8 +264,29 @@
     </section>
 
     <!-- footer-->
-    <footer class="min-h-80 w-screen flex bg-brand_black">
-        
+    <footer class="min-h-80 w-screen flex bg-brand_black text-white items-center justify-center md:justify-center flex-col md:flex-row gap-12 md:gap-0">
+        <!-- brand and copyright -->
+        <div class="grid gap-3 w-[100%] justify-center md:w-[55%] md:justify-start">
+
+            <!-- brand icon -->
+            <img src="src/assets/nexcent-logo-white.png" alt="Nexcent" class="w-44">
+
+            <p>Copyright &copy; <span id="current_year"></span> Nexcent ltd. <br> All rights reserved</p>
+        </div>
+
+        <!-- email newsletter -->
+        <div class="grid gap-4">
+            <h1 class="font-semibold text-xl text-center">Stay up-to date</h1>
+            
+            <form class="bg-d_grey flex gap-3 p-3 rounded-md">
+                <input required class="focus-visible:outline-none bg-d_grey" placeholder="Your email address" type="email" name="" id="">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                      </svg>
+                </button>
+            </form>
+        </div>
     </footer>
 </body>
 </html>
