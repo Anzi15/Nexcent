@@ -666,6 +666,10 @@ video {
   max-height: 24rem;
 }
 
+.min-h-96 {
+  min-height: 24rem;
+}
+
 .min-h-\[100\%\] {
   min-height: 100%;
 }
@@ -684,6 +688,14 @@ video {
 
 .min-h-\[75vh\] {
   min-height: 75vh;
+}
+
+.min-h-8 {
+  min-height: 2rem;
+}
+
+.min-h-80 {
+  min-height: 20rem;
 }
 
 .w-10\/12 {
@@ -812,6 +824,11 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.bg-brand_black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 50 56 / var(--tw-bg-opacity));
 }
 
 .bg-brand_primary {
