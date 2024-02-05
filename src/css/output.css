@@ -634,10 +634,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[10\%\] {
-  margin-top: 10%;
-}
-
 .mt-\[10rem\] {
   margin-top: 10rem;
 }
@@ -662,16 +658,8 @@ video {
   height: 2rem;
 }
 
-.h-\[3ovh\] {
-  height: 3ovh;
-}
-
 .h-\[30vh\] {
   height: 30vh;
-}
-
-.h-\[\] {
-  height: ;
 }
 
 .max-h-96 {
@@ -790,6 +778,10 @@ video {
   justify-content: space-evenly;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -804,10 +796,6 @@ video {
 
 .gap-9 {
   gap: 2.25rem;
-}
-
-.gap-\[3rem\] {
-  gap: 3rem;
 }
 
 .gap-\[2rem\] {
@@ -894,6 +882,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -902,11 +895,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -965,6 +953,10 @@ video {
   transition-duration: 1000ms;
 }
 
+.duration-\[\.5s\] {
+  transition-duration: .5s;
+}
+
 .duration-\[1\.2s\] {
   transition-duration: 1.2s;
 }
@@ -981,23 +973,7 @@ video {
   transition-duration: 1s;
 }
 
-.duration-\[\.5s\] {
-  transition-duration: .5s;
-}
-
 /* npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch */
-
-.hover\:justify-between:hover {
-  justify-content: space-between;
-}
-
-.hover\:justify-evenly:hover {
-  justify-content: space-evenly;
-}
-
-.hover\:gap-\[3rem\]:hover {
-  gap: 3rem;
-}
 
 .hover\:gap-\[2\.5rem\]:hover {
   gap: 2.5rem;
@@ -1050,6 +1026,14 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
   }
 
   .md\:text-left {
