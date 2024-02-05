@@ -245,9 +245,9 @@
     </section>
 
     <!-- section caring is marketing -->
-    <section class="w-screen h-[30vh] flex flex-col justify-center items-center p-4">
-        <h1 class="text-3xl font-semibold text-center pt-4">Caring is the new marketing</h1>
-        <p class="m-w-[10rem] text-center ">In a world inundated with messages and advertisements, <br> Nexcent stands out by transformative approach</p>
+    <section class="w-screen h-[30vh] flex flex-col justify-center items-center p-4 gap-3">
+        <h1 class="text-4xl  font-bold text-center pt-4 hover:decoration-dotted hover:decoration-brand_primary hover:underline underline-offset-4">Caring is the <span class="text-brand_primary">new marketing</span></h1>
+        <p class="w-[35%] text-center ">In a world inundated with messages and advertisements, Nexcent stands out by transformative approach</p>
     </section>
 
     <!-- section try first -->
@@ -278,13 +278,18 @@
         <div class="grid gap-4">
             <h1 class="font-semibold text-xl text-center">Stay up-to date</h1>
             
-            <form class="bg-d_grey flex gap-3 p-3 rounded-md">
-                <input required class="focus-visible:outline-none bg-d_grey" placeholder="Your email address" type="email" name="" id="">
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
-                      </svg>
-                </button>
+            <form class="flex gap-3 p-3  flex-col" id="form_email" onsubmit=" document.getElementById('form_email_message').classList.remove('hidden'); this.reset(); return false">
+                <div class="flex rounded-md p-3 bg-d_grey">
+
+                    <input required class="focus-visible:outline-none bg-d_grey" placeholder="Your email address" type="email" name="email_inp" id="">
+                    <button id="form_email_submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                          </svg>
+                    </button>
+                </div>
+
+                <input id="form_email_message" type="text"  class="text-brand_primary bg-brand_black font-semibold text-xl hidden focus-visible:outline-none" name="message" readonly value="Thank you for submission!">
             </form>
         </div>
     </footer>
