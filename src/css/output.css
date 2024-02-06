@@ -686,12 +686,20 @@ video {
   min-height: 35vh;
 }
 
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
+
 .min-h-\[75vh\] {
   min-height: 75vh;
 }
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .w-44 {
@@ -878,6 +886,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -892,6 +904,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
