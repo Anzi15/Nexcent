@@ -74,40 +74,43 @@
     </header>
 
     <!-- main form and decoration  -->
-    <main class="flex w-4/5 min-h-[70vh]">
-        <div class=""></div>
+    <main class=" w-4/5 min-h-[70vh]">
+        <form class="">
+            <Label>Business/Brand Name</Label>
+            <input type="text" name="" id="">
+        </form>
         <div class=""></div>
     </main>
 
         <!-- footer-->
-        <footer class="min-h-80 w-screen flex bg-brand_black text-white items-center justify-center md:justify-center flex-col md:flex-row gap-12 md:gap-0">
-            <!-- brand and copyright -->
-            <div class="grid gap-3 w-[100%] justify-center md:w-[55%] md:justify-start">
-    
-                <!-- brand icon -->
-                <img src="/src/assets/nexcent-logo-white.png" alt="Nexcent" class="w-44">
-    
-                <p>Copyright &copy; <span id="footer_current_year"></span> Nexcent ltd. <br> All rights reserved</p>
-            </div>
-    
-            <!-- email newsletter -->
-            <div class="grid gap-4">
-                <h1 class="font-semibold text-xl text-center">Stay up-to date</h1>
-                
-                <form class="flex gap-3 p-3  flex-col" id="form_email" onsubmit=" document.getElementById('form_email_message').classList.remove('hidden'); this.reset(); return false">
-                    <div class="flex rounded-md p-3 bg-d_grey">
-    
-                        <input required class="focus-visible:outline-none bg-d_grey" placeholder="Your email address" type="email" name="email_inp" id="">
-                        <button id="form_email_submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
-                              </svg>
-                        </button>
-                    </div>
-    
-                    <input id="form_email_message" type="text"  class="text-brand_primary bg-brand_black font-semibold text-xl hidden focus-visible:outline-none" name="message" readonly value="Thank you for submission!">
-                </form>
-            </div>
-        </footer>
+    <footer class="min-h-80 w-screen flex bg-brand_black text-white items-center justify-center md:justify-center flex-col md:flex-row gap-12 md:gap-0">
+        <!-- brand and copyright -->
+        <div class="grid gap-3 w-[100%] justify-center md:w-[55%] md:justify-start">
+
+            <!-- brand icon -->
+            <img src="/src/assets/nexcent-logo-white.png" alt="Nexcent" class="w-44">
+
+            <p>Copyright &copy; <span id="footer_current_year"></span> Nexcent ltd. <br> All rights reserved</p>
+        </div>
+
+        <!-- email newsletter -->
+        <div class="grid gap-4">
+            <h1 class="font-semibold text-xl text-center">Stay up-to date</h1>
+            
+            <form class="flex gap-3 p-3  flex-col" id="form_email" onsubmit=" document.getElementById('form_email_message').classList.remove('hidden'); this.reset(); return false">
+                <div class="flex rounded-md p-3 bg-d_grey">
+
+                    <input required class="focus-visible:outline-none bg-d_grey" placeholder="Your email address" type="email" name="email_inp" id="">
+                    <button id="form_email_submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                            </svg>
+                    </button>
+                </div>
+
+                <input id="form_email_message" type="text"  class="text-brand_primary bg-brand_black font-semibold text-xl hidden focus-visible:outline-none" name="message" readonly value="Thank you for submission!">
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
