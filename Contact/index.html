@@ -18,58 +18,96 @@
     <script defer src="/src/js/index.js"></script>
     <script defer src="/src/js/observer.js"></script>
 </head>
-<body>
-        <header>
-        <!-- seprate navbar for mobiles -->
-        <div id="mob-nav" class="mobile-only-nav w-full md:hidden hidden bg-silver transition-all duration-[1.2s]">
-            <div class="nav-links  md:flex items-center ">
-                <ul class="w-full flex gap-9 font-normal flex-col items-center">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Feature</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="nav-cta flex gap-4 w-full justify-center mt-4">
-                <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text  md:block " href="/Contact/">Contact us</a>
-            </div>
+<body class="grid justify-center">
+    <header class="w-screen">
+    <!-- seprate navbar for mobiles -->
+    <div id="mob-nav" class="mobile-only-nav w-full md:hidden hidden bg-silver transition-all duration-[1.2s]">
+        <div class="nav-links  md:flex items-center ">
+            <ul class="w-full flex gap-9 font-normal flex-col items-center">
+                <li><a href="/">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Feature</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
         </div>
-        <!-- navbar -->
-        <nav class="flex lg:w-full justify-between p-7">
-            <!-- logo for branding -->
-            <div class="logo flex items-center">
-                <a href="">
-                    <img src="/src/assets/nexcent-logo-black.png" alt="nexcent-logo">
-                </a>
-            </div>
+        <div class="nav-cta flex gap-4 w-full justify-center mt-4">
+            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text  md:block " href="/Contact/">Contact us</a>
+        </div>
+    </div>
+    
+    <!-- navbar -->
+    <nav class="flex lg:w-full justify-between p-7">
+        <!-- logo for branding -->
+        <div class="logo flex items-center">
+            <a href="">
+                <img src="/src/assets/nexcent-logo-black.png" alt="nexcent-logo">
+            </a>
+        </div>
 
-            <!-- links for navigation -->
-            <div class="nav-links hidden  md:flex items-center ">
-                <ul class=" flex gap-9 font-normal ">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Feature</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-            </div>
+        <!-- links for navigation -->
+        <div class="nav-links hidden  md:flex items-center ">
+            <ul class=" flex gap-9 font-normal ">
+                <li><a href="/">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Feature</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
 
-            <!-- call to action button -->
-            <div class="nav-cta flex gap-4 ">
-                <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="/Contact/">Contact us</a>
-            </div>
+        <!-- call to action button -->
+        <div class="nav-cta flex gap-4 ">
+            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="/Contact/">Contact us</a>
+        </div>
 
 
-            <div class="reponsive-hamburger-toggler md:hidden ">
-                <button id="nav-toggle-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                </button>
-            </div>
+        <div class="reponsive-hamburger-toggler md:hidden ">
+            <button id="nav-toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+        </div>
 
-        </nav>
+    </nav>
     </header>
+
+    <!-- main form and decoration  -->
+    <main class="flex w-4/5">
+        <div class=""></div>
+        <div class=""></div>
+    </main>
+
+        <!-- footer-->
+        <footer class="min-h-80 w-screen flex bg-brand_black text-white items-center justify-center md:justify-center flex-col md:flex-row gap-12 md:gap-0">
+            <!-- brand and copyright -->
+            <div class="grid gap-3 w-[100%] justify-center md:w-[55%] md:justify-start">
+    
+                <!-- brand icon -->
+                <img src="src/assets/nexcent-logo-white.png" alt="Nexcent" class="w-44">
+    
+                <p>Copyright &copy; <span id="footer_current_year"></span> Nexcent ltd. <br> All rights reserved</p>
+            </div>
+    
+            <!-- email newsletter -->
+            <div class="grid gap-4">
+                <h1 class="font-semibold text-xl text-center">Stay up-to date</h1>
+                
+                <form class="flex gap-3 p-3  flex-col" id="form_email" onsubmit=" document.getElementById('form_email_message').classList.remove('hidden'); this.reset(); return false">
+                    <div class="flex rounded-md p-3 bg-d_grey">
+    
+                        <input required class="focus-visible:outline-none bg-d_grey" placeholder="Your email address" type="email" name="email_inp" id="">
+                        <button id="form_email_submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                              </svg>
+                        </button>
+                    </div>
+    
+                    <input id="form_email_message" type="text"  class="text-brand_primary bg-brand_black font-semibold text-xl hidden focus-visible:outline-none" name="message" readonly value="Thank you for submission!">
+                </form>
+            </div>
+        </footer>
 </body>
 </html>
