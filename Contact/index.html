@@ -17,9 +17,11 @@
     <!-- js -->
     <script defer src="/src/js/index.js"></script>
     <script defer src="/src/js/observer.js"></script>
+    <script defer src="/src/js/form-submission.js"></script>
 </head>
-<body class="grid justify-center overflow-x-hidden">
-    <header class="w-screen">
+<body class="grid justify-center overflow-x-hidden ">
+    <!-- nav bar -->
+    <header class="w-screen bg-silver">
     <!-- seprate navbar for mobiles -->
     <div id="mob-nav" class="mobile-only-nav w-full md:hidden hidden bg-silver transition-all duration-[1.2s] pt-8 pb-8">
         <div class="nav-links  md:flex items-center ">
@@ -74,12 +76,53 @@
     </header>
 
     <!-- main form and decoration  -->
-    <main class=" w-4/5 min-h-[70vh]">
-        <form class="">
-            <Label>Business/Brand Name</Label>
-            <input type="text" name="" id="">
-        </form>
-        <div class=""></div>
+    <main class=" w-screen min-h-[70vh] bg-silver flex justify-evenly flex-wrap">
+        <!-- form container -->
+        <div class="form-container w-[95%] md:w-[45%] ">
+            <!-- form  -->
+            <form class="flex flex-wrap gap-4 justify-center items-center rounded-lg p-4" id="form">
+                <!-- heading -->
+                <h1 class="text-4xl text-brand_primary font-semibold text-center">Your first step towards success, Nexcent</h1>
+
+                <!-- tags to provide data to Web3Forms (form submission Service) -->
+                <input type="hidden" name="access_key" value="34099478-b2e7-47fd-ac8d-bd4560f36e38">
+                <input type="hidden" name="subject" value="New client from Nexcent">
+
+                <!-- first name -->
+                <input type="text" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="First Name"  autocomplete="given-name" name="First name" required> 
+                <!-- last name -->
+                <input type="text" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Last Name"  autocomplete="family-name" name="Last name" required>
+                <!-- email  -->
+                <input type="email" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Email" autocomplete="email" name="Email" required>
+                
+                <!-- Business name  -->
+                <input type="text" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver"  placeholder="Business Name" autocomplete="organization" name="Business name" required>
+                
+                <!-- phone number  -->
+                <input type="tel" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Phone number" autocomplete="tel" name="ph no:" required>
+                
+                <!-- website  -->
+                <input type="url" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Website (optinal)" name="website">
+    
+                <!-- budget  -->
+                <select  name="budget" id="" class="text-d_grey pr-4 pl-4 w-[95%] rounded h-12 border-[1px] bg-silver border-d_grey ">
+                   <option value="" class="text-d_grey" disabled selected>Select your budget</option>
+    
+                   <option value="$500 or less"> $500 or less </option>
+                   <option value="$1000 - $2000"> $1000 - $2000 </option>
+                   <option value="$3000+"> $3000+</option>
+                </select>
+
+                
+
+                <!-- submit  -->
+                <input  id="result" type="submit" value="Start your success story" class="w-[95%] bg-brand_primary text-white h-[3rem] rounded">
+            </form>
+        </div>
+        <!-- img -->
+        <div class="w-[95%] md:w-[45%]">
+            <img src="/src/assets/illustrations/goals.svg" alt="Goals image">
+        </div>
     </main>
 
         <!-- footer-->
